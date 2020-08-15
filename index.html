@@ -202,9 +202,7 @@
             Video4Linux2-compliant 
           </a>
           
-          applications.  Although we're still having some problems
-          getting everything working together, there's a lot to 
-          work with. 
+          applications.  
         </p>
 <!-- Embeded video section -->
 <div class="container mt-4 pt-4">
@@ -215,16 +213,88 @@
     </div>
   </div>
 </div>
+<p>
+  Learn more at the meetup
+</p>
+<p class="lead mb-0"><a href="https://oppget.com/capture/ricoh/ricoh_linux_meetup_2020/" 
+  class="display-4 font-weight-bold">Sign Up Now</a></p>
+      </div>
 
-<div class="container mt-4 pt-4">
-  <h3>
+<div class="blog-post">
+  <h2 class="blog-post-title" id="best-practice">
     Open Pose running on NVIDIA Jetson Nano
-  </h3>
+  </h2>
+  <p class="blog-post-meta">Aug 14, 2020 </p>
+  
   <img class="img-fluid" src="img/openpose.png" alt="open pose">
+  <p>
+    The output of the gst sample program can be used with the 
+    <a href="https://github.com/umlaeute/v4l2loopback">
+    v4l2loopback kernel module
+  </a> to create V4L2 loopback devices
+    that appear on <code>/dev/video1</code> or <code>/dev/video2</code>. 
+    These devices can then be accessed by programs such as 
+    <a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose">
+      OpenPose</a>.
+  </p>
+  <p>
+    Learn more at the meetup
+  </p>
+  <p class="lead mb-0"><a href="https://oppget.com/capture/ricoh/ricoh_linux_meetup_2020/" 
+    class="display-4 font-weight-bold">Sign Up Now</a></p>
   </div>
 
-   
-        <p>
+  <div class="blog-post">
+    <h2 class="blog-post-title" id="best-practice">
+      Building libuvc-theta and gstreamer sample program on Ubuntu 20.04
+      Focal Fossa. 
+    </h2>
+    <p class="blog-post-meta">Aug 20, 2020 </p>
+<!-- Embeded video section -->
+<div class="container mt-4 pt-4">
+  <div class="row ">
+    <div class="col-12">
+      <iframe width=100% height=600px; src="https://www.youtube.com/embed/Ji4WDvPHzQk" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+<p>
+  <ol>
+    <li>
+      Grab the patched version of <a href="https://github.com/ricohapi/libuvc-theta">
+        libuvc from GitHub. 
+      </a> 
+    </li>
+    <li>
+      Clone 
+      <a href="https://github.com/ricohapi/libuvc-theta-sample">libuvc-theta-sample</a>
+      from GitHub
+    </li>
+    <li>
+      build and install libuvc.  Make sure you build the patched branch.
+    </li>
+    <li>
+      build the sample app
+    </li>
+    <li>Plug RICOH THETA into Linux USB port.  Put into live mode with the mode 
+      button on the side of the camera or with the USB API for 
+      <a href="https://api.ricoh/docs/theta-usb-api/property/still_capture_mode/">
+        StillCaptureMode</a> which you need to set to Live streaming 
+        with value 0x8005.
+      
+    </li>
+  </ol>
+  
+
+
+</p>
+    <p>
+      Learn more at the meetup
+    </p>
+    <p class="lead mb-0"><a href="https://oppget.com/capture/ricoh/ricoh_linux_meetup_2020/" 
+      class="display-4 font-weight-bold">Sign Up Now</a></p>
+        <p class='pt-5'>
           <a href="#">Back to top</a>
         </p>
 
