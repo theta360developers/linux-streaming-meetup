@@ -109,13 +109,13 @@
         <div class="col p-4 d-flex flex-column position-static">
           <strong class="d-inline-block mb-2 text-primary">USB Control</strong>
           <h3 class="mb-0">HowTo</h3>
-          <div class="mb-1 text-muted">Aug 14</div>
+          <div class="mb-1 text-muted">Oct 6</div>
           <p class="card-text mb-auto">Power and control camera with USB</p>
           <a href="https://community.theta360.guide/t/ricoh-theta-api-over-usb-cable-z1-v-s-sc-models/65" 
           class="stretched-link">Discuss USB API</a>
         </div>
         <div class="col-auto d-none d-lg-block">
-        <img src="img/jetson.png" height="250" alt="">
+        <img src="img/rpi_theta.jpg" height="150" alt="">
         </div>
       </div>
     </div>
@@ -124,15 +124,14 @@
         <div class="col p-4 d-flex flex-column position-static">
           <strong class="d-inline-block mb-2 text-success">USB Streaming</strong>
           <h3 class="mb-0">Setup</h3>
-          <div class="mb-1 text-muted">July 30</div>
-          <p class="mb-auto">Linux streaming driver libuvc-theta is enabling the future of 
-            360 cameras in robotics and AI.</p>
+          <div class="mb-1 text-muted">Oct 6</div>
+          <p class="mb-auto">Stream to Linux with libuvc and process live video with a Jetson</p>
           <a href="https://community.theta360.guide/t/live-streaming-over-usb-on-ubuntu-and-linux-nvidia-jetson/4359?u=craig" 
           class="stretched-link mb-2">
-            Discuss libuvc</a>
+            Discuss Linux Streaming</a>
         </div>
         <div class="col-auto d-none d-lg-block">
-          <img src="img/rover-high.png"  width="200" >
+          <img src="img/detect_bot.PNG"  height="250" >
 
         </div>
       </div>
@@ -144,7 +143,7 @@
   <div class="row">
     <div class="col-md-8 blog-main">
     <h3 class="pb-4 mb-4 font-italic border-bottom">
-      Changing realties and new business opportunities
+      Robotics technology such as live streaming is moving into mainstream business.  Be ready to win. 
     </h3>
 
   <!-- begin quotes section -->
@@ -167,7 +166,7 @@
       <blockquote class="lead text-secondary font-weight-normal">
         There's a huge increase in people building 360 applications with 
         live streaming and API control.  Building your own robot is a great 
-        way to learn these technologies by doing. 
+        way to learn how to use these technologies in your business strategy. 
       </blockquote>
     </div>
     <!-- End Blockquote -->
@@ -191,6 +190,98 @@
 
   <!-- start blog section -->
 
+
+  <div class="blog-post">
+    <h2 class="blog-post-title" id="best-practice">
+      RTSP Streaming From Your Own Robot</h2>
+    <p class="blog-post-meta">October 6, 2020 </p>
+
+    <p>Stream 4K 360 video with 400ms to 1000ms latency.   
+    </p>
+    <hr>
+    <p> Software and parts are fully explained in the meetup.  Build your own robot 
+      for under $200 in parts (excluding cost of camera).
+    </p>
+<!-- Embeded video section -->
+<div class="container mt-4 pt-4">
+<div class="row ">
+<div class="col-12">
+  <iframe width=100% height=600px; src="https://www.youtube.com/embed/DNqKH-3lJ4U" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+<div>
+  <p>
+    Easily build this demonstration with the RTSP plug-in on a THETA V or Z1.  Extend the architecture 
+    by connecting the camera to a Jetson and using gstreamer or 
+    <a href="https://janus.conf.meetecho.com/">
+    Janus WebRTC server   </a> to get the stream to 
+
+    another computer. 
+  </p>
+</div>
+</div>
+<p>
+Learn more at the meetup
+</p>
+<p class="lead mb-0"><a href="https://oppget.com/capture/ricoh/ricoh_robot_meetup_2020/" 
+class="display-4 font-weight-bold">Sign Up Now</a></p>
+  </div>
+
+  <!-- end blog post -->
+
+
+
+  <div class="blog-post">
+    <h2 class="blog-post-title" id="best-practice">
+      Advanced Camera Power Control - On, Off, Sleep, Wake</h2>
+    <p class="blog-post-meta">October 6, 2020 </p>
+
+    <p>Remotely control camera on and off or build a touchscreen for your robot.   
+    </p>
+    <hr>
+    <p> Use ssh or HTTP to connect to a Raspberry Pi or Nano and control the THETA power. 
+      You can also build an touchscreen interface for your camera. 
+    </p>
+<!-- Embeded video section -->
+<div class="container mt-4 pt-4">
+  <h2>Remote Power On Using ssh from Windows 10 control dashboard</h2>
+<div class="row ">
+<div class="col-12">
+  <iframe width=100% height=600px; src="https://www.youtube.com/embed/cN6OU5Mm9Ts" frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+
+<!-- embed second video  -->
+<div class="container mt-4 pt-4">
+  <h2>Touchscreen controller connected to Raspberry Pi</h2>
+  <p>
+    Using official Raspberry Pi touchscreen and Flutter to build interface. The Raspberry Pi is 
+    connected to the THETA with a USB cable. 
+  </p>
+  <div class="row ">
+  <div class="col-12">
+    <iframe width=100% height=600px; src="https://www.youtube.com/embed/rxKEqBW77bs" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  </div>
+  </div>
+<!-- begin video description -->
+<div>
+  <p>
+
+  </p>
+</div>
+<p>
+Learn more at the meetup
+</p>
+<p class="lead mb-0"><a href="https://oppget.com/capture/ricoh/ricoh_robot_meetup_2020/" 
+class="display-4 font-weight-bold">Sign Up Now</a></p>
+  </div>
+
+  <!-- end blog post -->
 
 
       <div class="blog-post">
@@ -226,6 +317,8 @@
 <p class="lead mb-0"><a href="https://oppget.com/capture/ricoh/ricoh_robot_meetup_2020/" 
   class="display-4 font-weight-bold">Sign Up Now</a></p>
       </div>
+
+      <!-- end blog post -->
 
 <div class="blog-post">
   <h2 class="blog-post-title" id="best-practice">
