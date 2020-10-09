@@ -86,7 +86,7 @@
   <div class="jumbotron mt-4 p-4 p-md-5 text-white rounded bg-dark">
     <div class="row">
     <div class="col-md-6 px-0">
-      <h1 class="display-4 text-white">Add a 360 Camera to Your Robot</h1>
+      <h1 class="display-4 text-white">Add a 360&deg; Camera to Your Robot</h1>
       <p class="lead my-3">Online meetup: Learn to build your own robot with
        360 camera live streaming, video transmission, on-board processing.  
         Tues, October 27, 10am PDT.
@@ -193,8 +193,8 @@
 
   <div class="blog-post">
     <h2 class="blog-post-title" id="best-practice">
-      RTSP Streaming From Your Own Robot</h2>
-    <p class="blog-post-meta">October 9, 2020 </p>
+      360&deg; RTSP Streaming From Your Own Robot</h2>
+    <p class="blog-post-meta">October 10, 2020 </p>
 
     <p>Stream 4K 360 video with 400ms to 1000ms latency.   
     </p>
@@ -227,6 +227,75 @@ Learn more at the meetup
 <p class="lead mb-0"><a href="https://oppget.com/capture/ricoh/ricoh_robot_meetup_2020/" 
 class="display-4 font-weight-bold">Sign Up Now</a></p>
   </div>
+
+  <!-- end blog post -->
+
+  <div class="blog-post">
+    <h2 class="blog-post-title" id="5-critial-components">
+      5 Critical Components in Your 360&deg; Robot </h2>
+    <p class="blog-post-meta">October 9, 2020 </p>
+
+    <p>Design a strategy for transmission, viewing, processing, control and power   
+    </p>
+    <hr>
+    <p> A 360&deg; camera has slighty different requirements compared to a standard USB or CSI
+      camera.  Learn what it takes to add 360&deg; vision to your project. 
+    </p>
+<!-- Embeded video section -->
+<div class="container mt-4 pt-4">
+<div class="row ">
+<div class="col-12">
+  <img class="img-fluid" src="img/360-system-components.png" alt="360 system components">
+</div>
+</div>
+<div>
+  <h3>1. Transmission</h3>
+  <p>
+    The meetup demonstration will use software that runs inside the
+    RICOH THETA V or RICOH THETA SC2 to stream video over Wi-Fi. 
+    You can use other technologies such as using a modified version 
+    of libuvc to live stream high-quality video over a USB cable to 
+    a Jetson Nano.  The Nano can then relay the stream over an IP 
+    network to another computer running a program such as 
+    <a href="http://wiki.ros.org/gscam">gscam</a>
+     on ROS.
+  </p>
+  <img class="img-fluid" src="img/component-stream.png" alt="streaming architecture">
+</div>
+<div>
+  <h3>2. Viewing</h3>
+  <p>
+    Unlike a standard camera, the stream will be in equirectangular format. 
+    You can use technologies such as Unity or A-Frame to navigate the 
+    scene. 
+  </p>
+  <img src="img/unity.png" class="img-fluid" alt="unity view">
+</div>
+<h3>Process</h3>
+<p>
+  You may need to adjust your object detection software to 
+  handle the equirectangular frames from a 360 camera. 
+</p>
+<img src="img/canny.png" class="img-fluid" alt="canny edge detection ">
+</div>
+
+  </div>
+
+  <h3>Control </h3>
+  <p>
+    360&deg; cameras generally use a modified version of the OSC API 
+    from Google.  You can also use a USB API based on MTP. 
+  </p>
+
+  <iframe width=100% height=600px; src="https://www.youtube.com/embed/VTFwawlKEXA" frameborder="0"
+  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  <h3>Power</h3>
+
+  <p>
+    The camera receives power over USB.  You can control on/off behavior 
+    as well as sleep/wake using the USB
+  </p>
 
   <!-- end blog post -->
 
